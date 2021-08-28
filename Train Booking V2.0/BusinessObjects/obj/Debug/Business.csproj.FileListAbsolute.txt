@@ -1,0 +1,6 @@
+H:\teaching\OOSD\Assessment 1\demoCode\Demo\BusinessObjects\bin\Debug\BusinessObjects.dll
+H:\teaching\OOSD\Assessment 1\demoCode\Demo\BusinessObjects\bin\Debug\BusinessObjects.pdb
+H:\teaching\OOSD\Assessment 1\demoCode\Demo\BusinessObjects\obj\Debug\Business.csprojAssemblyReference.cache
+H:\teaching\OOSD\Assessment 1\demoCode\Demo\BusinessObjects\obj\Debug\Business.csproj.CoreCompileInputs.cache
+H:\teaching\OOSD\Assessment 1\demoCode\Demo\BusinessObjects\obj\Debug\BusinessObjects.dll
+H:\teaching\OOSD\Assessment 1\demoCode\Demo\BusinessObjects\obj\Debug\BusinessObjects.pdb

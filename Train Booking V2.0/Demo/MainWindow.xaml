@@ -1,0 +1,66 @@
+﻿<Window x:Class="Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="727.335" Width="736.333">
+    <Grid x:Name="TrainDepartureTimeLbl">
+        <Label x:Name="AddBookingLbl" Content="Add Booking" HorizontalAlignment="Left" Height="32" Margin="486,7,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="PassengerNameLbl" Content="Passenger Name :" HorizontalAlignment="Left" Height="35" Margin="402,44,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label x:Name="PassengerTrainIDLbl" Content="Train ID:" HorizontalAlignment="Left" Height="28" Margin="453,84,0,0" VerticalAlignment="Top" Width="54"/>
+        <Label x:Name="PassengerDepartureStationLbl" Content="Departure Station:" HorizontalAlignment="Left" Height="26" Margin="400,116,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label x:Name="PassengerDestinationStationLbl" Content="Destination Station :" HorizontalAlignment="Left" Height="25" Margin="389,147,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label x:Name="PassengerFirstClassLbl" Content="First Class :" HorizontalAlignment="Left" Height="29" Margin="436,177,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label x:Name="PassengerCabinLbl" Content="Cabin : " HorizontalAlignment="Left" Height="25" Margin="457,211,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="PassengerPriceLbl" Content="Price :" HorizontalAlignment="Left" Height="27" Margin="462,241,0,0" VerticalAlignment="Top" Width="45"/>
+        <Button x:Name="CalculatePriceBtn" Content="Calculate Price" HorizontalAlignment="Left" Height="28" Margin="583,357,0,0" VerticalAlignment="Top" Width="113" Click="CalculatePriceBtn_Click"/>
+        <Label x:Name="PassengerCoachLbl" Content="Coach : " HorizontalAlignment="Left" Height="26" Margin="454,273,0,0" VerticalAlignment="Top" Width="53"/>
+        <Label x:Name="PassengerSeatLbl" Content="Seat :" HorizontalAlignment="Left" Height="30" Margin="465,304,0,0" VerticalAlignment="Top" Width="42"/>
+        <TextBox x:Name="PassengerNameTxt" HorizontalAlignment="Left" Height="35" Margin="530,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="PassengerTrainIDTxt" HorizontalAlignment="Left" Height="28" Margin="530,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="PassengerDepartureStationTxt" HorizontalAlignment="Left" Height="26" Margin="530,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="PassengerDesinationStationTxt" HorizontalAlignment="Left" Height="25" Margin="530,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="PassengerFirstClassTxt" HorizontalAlignment="Left" Height="29" Margin="530,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="PassengerCabinTxt" HorizontalAlignment="Left" Height="25" Margin="530,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="PassengerPriceTxt" HorizontalAlignment="Left" Height="27" Margin="530,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="PassengerCoachTxt" HorizontalAlignment="Left" Height="26" Margin="530,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="PassengerSeatTxt" HorizontalAlignment="Left" Height="30" Margin="530,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <Button x:Name="AddBookingBtn" Content="Add Booking" HorizontalAlignment="Left" Height="28" Margin="394,357,0,0" VerticalAlignment="Top" Width="113" Click="AddBookingBtn_Click"/>
+        <Button x:Name="FindBookingBtn" Content="Find Booking" HorizontalAlignment="Left" Height="28" Margin="394,390,0,0" VerticalAlignment="Top" Width="113" Click="FindBookingBtn_Click"/>
+        <Button x:Name="GenerateCustomerBtn" Content="Generate Customer" HorizontalAlignment="Left" Height="28" Margin="394,423,0,0" VerticalAlignment="Top" Width="113" Click="GenerateCustomerBtn_Click"/>
+        <Button x:Name="DeleteBookingBtn" Content="Delete Booking" HorizontalAlignment="Left" Height="28" Margin="583,390,0,0" VerticalAlignment="Top" Width="113" Click="DeleteBookingBtn_Click"/>
+        <Button x:Name="ClearBookingBtn" Content="Clear Form" HorizontalAlignment="Left" Height="28" Margin="583,423,0,0" VerticalAlignment="Top" Width="113" Click="ClearBookingBtn_Click"/>
+        <Label x:Name="AddTrainLbl" Content="Add Train" HorizontalAlignment="Left" Height="32" Margin="141,7,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label x:Name="TrainTypeLbl" Content="Train Type : " HorizontalAlignment="Left" Height="35" Margin="55,44,0,0" VerticalAlignment="Top" Width="69"/>
+        <Label x:Name="TrainIDLbl" Content="Train ID : " HorizontalAlignment="Left" Height="28" Margin="67,84,0,0" VerticalAlignment="Top" Width="57"/>
+        <Label x:Name="TrainDepartureStationLbl" Content="Departure Station : " HorizontalAlignment="Left" Height="30" Margin="13,117,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label x:Name="TrainDestinationStationLbl" Content="Destination Station :" HorizontalAlignment="Left" Height="30" Margin="8,152,0,0" VerticalAlignment="Top" Width="116"/>
+        <Label x:Name="TrainIntermediateStopsLbl" Content="Intermediate Stops :" HorizontalAlignment="Left" Height="32" Margin="8,187,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label x:Name="SleeperBerthLbl" Content="Sleeper Berth :" HorizontalAlignment="Left" Height="32" Margin="35,337,0,0" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="TrainIDTxt" HorizontalAlignment="Left" Height="28" Margin="141,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="TrainDepartureStationTxt" HorizontalAlignment="Left" Height="30" Margin="141,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="TrainDestinationStationTxt" HorizontalAlignment="Left" Height="30" Margin="141,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="SleeperBerthTxt" HorizontalAlignment="Left" Height="32" Margin="141,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <Button x:Name="AddTrainBtn" Content="Add Train" HorizontalAlignment="Left" Height="28" Margin="56,456,0,0" VerticalAlignment="Top" Width="113" Click="AddTrainBtn_Click"/>
+        <Button x:Name="FindTrainByIDBtn" Content="Find Train by ID" HorizontalAlignment="Left" Height="28" Margin="211,456,0,0" VerticalAlignment="Top" Width="113" Click="FindTrainBtn_Click"/>
+        <Button x:Name="DeleteTrainBtn" Content="Delete Train" HorizontalAlignment="Left" Height="28" Margin="56,501,0,0" VerticalAlignment="Top" Width="113" Click="DeleteTrainBtn_Click"/>
+        <Button x:Name="ClearTrainBtn" Content="Clear Form" HorizontalAlignment="Left" Height="28" Margin="211,501,0,0" VerticalAlignment="Top" Width="113" Click="ClearTrainBtn_Click"/>
+        <Label x:Name="PoundLbl" Content="£" HorizontalAlignment="Left" Height="27" Margin="507,241,0,0" VerticalAlignment="Top" Width="18"/>
+        <Label Content="Departure Time :" HorizontalAlignment="Left" Height="32" Margin="22,263,0,0" VerticalAlignment="Top" Width="102"/>
+        <Label Content="Departure Date :" HorizontalAlignment="Left" Height="32" Margin="22,300,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="TrainDepartureTimeTxt" HorizontalAlignment="Left" Height="32" Margin="141,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Text="hh:mm"/>
+        <TextBox x:Name="TrainDepartureDateTxt" HorizontalAlignment="Left" Height="32" Margin="141,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Text="Day/Month/Year"/>
+        <Label x:Name="TrainFirstClassLbl" Content="First Class :" HorizontalAlignment="Left" Height="30" Margin="54,374,0,0" VerticalAlignment="Top" Width="70"/>
+        <TextBox x:Name="TrainFirstClassTxt" HorizontalAlignment="Left" Height="30" Margin="141,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <ComboBox x:Name="TrainTypeCombo" HorizontalAlignment="Left" Height="35" Margin="141,44,0,0" VerticalAlignment="Top" Width="166">
+            <Label x:Name="ExpressComboLbl" Content="Express" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="111"/>
+            <Label x:Name="SleeperComboLbl" Content="Sleeper" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="113"/>
+            <Label x:Name="StopperComboLbl" Content="Stopper" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="117"/>
+        </ComboBox>
+        <Button x:Name="GenerateTrainBtn" Content="Generate Train" HorizontalAlignment="Left" Height="28" Margin="55,550,0,0" VerticalAlignment="Top" Width="114" Click="GenerateTrainBtn_Click"/>
+        <CheckBox x:Name="NewcastleCheck" Content="Newcastle" HorizontalAlignment="Left" Height="19" Margin="141,193,0,0" VerticalAlignment="Top" Width="80"/>
+        <CheckBox x:Name="Yorkcheck" Content="York" HorizontalAlignment="Left" Height="21" Margin="226,194,0,0" VerticalAlignment="Top" Width="81"/>
+        <CheckBox x:Name="DarlingtonCheck" Content="Darlington" HorizontalAlignment="Left" Height="21" Margin="141,224,0,0" VerticalAlignment="Top" Width="80"/>
+        <CheckBox x:Name="PeterboroughCheck" Content="Peterborough" HorizontalAlignment="Left" Height="21" Margin="226,224,0,0" VerticalAlignment="Top" Width="98"/>
+        <Button x:Name="FindTrainByDateBtn" Content="Find Train by Date" HorizontalAlignment="Left" Height="28" Margin="211,550,0,0" VerticalAlignment="Top" Width="113" Click="FindTrainByDateBtn_Click"/>
+        <Button x:Name="FindAllPassengersBtn" Content="Find All Passengers" HorizontalAlignment="Left" Height="28" Margin="394,456,0,0" VerticalAlignment="Top" Width="113" Click="FindAllPassengersBtn_Click"/>
+    </Grid>
+</Window>
